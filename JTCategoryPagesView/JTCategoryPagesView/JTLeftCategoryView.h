@@ -18,9 +18,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) NSInteger currentRow;
 
-- (void)reloadData;
-
 @property (nonatomic, copy) void (^ currentRowBlock)(NSInteger row);
+
+@property (nonatomic, strong) UIColor *leftCategorySelectedColor;
+
+@property (nonatomic, strong) UIColor *leftCategoryNormalColor;
+
+- (void)reloadData;
 
 @end
 

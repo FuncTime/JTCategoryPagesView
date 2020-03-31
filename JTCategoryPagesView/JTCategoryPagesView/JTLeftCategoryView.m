@@ -26,6 +26,8 @@
     if (self) {
         self.titles = [NSMutableArray array];
         self.selectStatus = [NSMutableArray array];
+        _leftCategoryNormalColor = UIColor.whiteColor;
+        _leftCategorySelectedColor = UIColor.grayColor;
         _leftCellHeight = 60;
         [self createViews];
     }
@@ -61,6 +63,16 @@
     [self.tableView reloadData];
 }
 
+- (void)setLeftCategorySelectedColor:(UIColor *)leftCategorySelectedColor {
+    _leftCategorySelectedColor = leftCategorySelectedColor;
+    [self.tableView reloadData];
+}
+
+- (void)setLeftCategoryNormalColor:(UIColor *)leftCategoryNormalColor {
+    _leftCategoryNormalColor = leftCategoryNormalColor;
+    [self.tableView reloadData];
+}
+
 - (void)setCurrentRow:(NSInteger)currentRow {
     _currentRow = currentRow;
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:currentRow inSection:0];
@@ -87,9 +99,9 @@
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.textLabel.text = self.titles[indexPath.row];
     if ([self.selectStatus[indexPath.row] isEqualToString:@"1"]) {
-        cell.backgroundColor = [UIColor redColor];
+        cell.backgroundColor = self.leftCategorySelectedColor;
     } else {
-        cell.backgroundColor = [UIColor whiteColor];
+        cell.backgroundColor = self.leftCategoryNormalColor;
     }
     return cell;
 }

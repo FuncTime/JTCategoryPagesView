@@ -31,6 +31,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSMutableArray<NSString *> *titles;
 
+@property (nonatomic, strong) UIColor *leftCategorySelectedColor;
+
+@property (nonatomic, strong) UIColor *leftCategoryNormalColor;
+
 - (void)registerNib:(nullable UINib *)nib forCellWithReuseIdentifier:(NSString *)identifier;
 
 - (void)reloadData;

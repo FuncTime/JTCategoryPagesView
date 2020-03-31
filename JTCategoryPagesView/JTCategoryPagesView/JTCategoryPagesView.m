@@ -67,6 +67,16 @@
     self.leftCategoryView.titles = titles;
 }
 
+- (void)setLeftCategorySelectedColor:(UIColor *)leftCategorySelectedColor {
+    _leftCategorySelectedColor = leftCategorySelectedColor;
+    self.leftCategoryView.leftCategorySelectedColor = leftCategorySelectedColor;
+}
+
+- (void)setLeftCategoryNormalColor:(UIColor *)leftCategoryNormalColor {
+    _leftCategoryNormalColor = leftCategoryNormalColor;
+    self.leftCategoryView.leftCategoryNormalColor = leftCategoryNormalColor;
+}
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return [self.delegate collectionView:collectionView numberOfItemsInSection:section];
 }
