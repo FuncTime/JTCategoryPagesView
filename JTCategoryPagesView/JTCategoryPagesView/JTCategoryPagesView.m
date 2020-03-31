@@ -9,7 +9,6 @@
 #import "JTCategoryPagesView.h"
 #import "JTLeftCategoryView.h"
 #import "JTRightPagesView.h"
-#import <Masonry/Masonry.h>
 
 @interface JTCategoryPagesView ()<JTRightPagesViewDelegate>
 

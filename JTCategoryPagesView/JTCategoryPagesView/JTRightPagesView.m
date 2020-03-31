@@ -7,7 +7,6 @@
 //
 
 #import "JTRightPagesView.h"
-#import <Masonry/Masonry.h>
 
 @interface JTRightPagesView ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 

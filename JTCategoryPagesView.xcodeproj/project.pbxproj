@@ -76,6 +76,7 @@
 		77A7A3652432DF6D00323E63 /* PagesCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagesCollectionViewCell.m; sourceTree = "<group>"; };
 		77A7A3662432DF6D00323E63 /* PagesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PagesCollectionViewCell.xib; sourceTree = "<group>"; };
 		77A7A3672432DF6D00323E63 /* PagesCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagesCollectionViewCell.h; sourceTree = "<group>"; };
+		77A7A36B2432E0E900323E63 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		7BEFCC8F861A6F9888096B37 /* Pods-JTCategoryPagesView-JTCategoryPagesViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JTCategoryPagesView-JTCategoryPagesViewUITests.debug.xcconfig"; path = "Target Support Files/Pods-JTCategoryPagesView-JTCategoryPagesViewUITests/Pods-JTCategoryPagesView-JTCategoryPagesViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		80119F5A865E7C9011D23FE8 /* Pods-JTCategoryPagesView-JTCategoryPagesViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JTCategoryPagesView-JTCategoryPagesViewUITests.release.xcconfig"; path = "Target Support Files/Pods-JTCategoryPagesView-JTCategoryPagesViewUITests/Pods-JTCategoryPagesView-JTCategoryPagesViewUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E18B70B235FD2AA821EA38C8 /* Pods_JTCategoryPagesView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JTCategoryPagesView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +164,7 @@
 				77A7A3342432DC7200323E63 /* LaunchScreen.storyboard */,
 				77A7A3372432DC7200323E63 /* Info.plist */,
 				77A7A3382432DC7200323E63 /* main.m */,
+				77A7A36B2432E0E900323E63 /* PrefixHeader.pch */,
 			);
 			path = JTCategoryPagesView;
 			sourceTree = "<group>";
@@ -625,6 +627,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JTCategoryPagesView/PrefixHeader.pch";
 				INFOPLIST_FILE = JTCategoryPagesView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -643,6 +646,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JTCategoryPagesView/PrefixHeader.pch";
 				INFOPLIST_FILE = JTCategoryPagesView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

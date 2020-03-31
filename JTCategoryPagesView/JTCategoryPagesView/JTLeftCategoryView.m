@@ -7,7 +7,6 @@
 //
 
 #import "JTLeftCategoryView.h"
-#import <Masonry/Masonry.h>
 
 @interface JTLeftCategoryView ()<UITableViewDelegate, UITableViewDataSource>
 
