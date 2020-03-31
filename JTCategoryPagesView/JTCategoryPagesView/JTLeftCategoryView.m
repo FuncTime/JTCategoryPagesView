@@ -84,7 +84,7 @@
 //    }];
 //    [self.selectStatus replaceObjectAtIndex:currentRow withObject:@"1"];
 
-    //exchangeObjectAtIndex方法--->在右边collectionView有动画的时候不完美--->所以取消了右边collectionView滑动的动画,还节约性能
+    //exchangeObjectAtIndex方法--->在右边collectionView有动画的时候不完美--->所以取消了右边collectionView scrollToItemAtIndexPath滑动的动画,还节约性能
     [self.selectStatus exchangeObjectAtIndex:self.lastRow withObjectAtIndex:currentRow];
     self.lastRow = currentRow;
     [self.tableView reloadData];
